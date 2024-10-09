@@ -1,0 +1,83 @@
+.Main{
+    margin-top: 81px;
+}
+.heroContent{
+    background-image: url("D:/Advance Mern/foodDeliveryApplication/frontEnd/src/assets/bgpizza3.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.mainBranch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.branch1{
+    width: 40%;
+    background-color: #7a988585; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color:rgba(57, 68, 51, 0.973);
+    border-radius: 10px;
+    height: 550px;
+}
+.branchimg img{
+    height: 300px;
+}
+.bottombroder{
+    font-size: 17px;
+    border-top: 2px solid var(--color8);
+    margin-top: 10px;
+    font-weight: 500;
+}
+.sideContent{
+    display: inline;
+    padding: 50px;
+    color:whitesmoke;
+    width: 40%;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.subContainer{
+    width:300px;
+    height: 450px;
+    padding: 15px;
+    border:2px solid var(--color2);
+    border-radius: 10px;
+    margin: 10px;
+}
+.subContainer:hover{
+    transition: 0.9s;
+    transform: scale(1.05);
+}
+.subContainer:hover img{
+    transition: 0.9s;
+    transform: scale(0.90);
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    height :200px;
+    overflow: hidden;
+}
+.subContainer button{
+    width: 45%;
+    margin: 3px;
+}
+.descContainer{
+    width: 290px;
+}

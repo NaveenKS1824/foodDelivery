@@ -1,0 +1,15 @@
+.mainWishList{
+    display:flex;
+    flex-direction: row;
+    width: 900px;
+    flex:1;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--color2);
+    border-radius: 10px;
+    height: 200px;
+    margin: 20px;
+}
+.imgSelected img{
+    height: 150px;
+}

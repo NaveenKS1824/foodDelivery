@@ -1,0 +1,50 @@
+.mainHeader {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color:var(--color7);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logoContainer {
+    flex: 1.5;
+}
+
+.logoContainer h4 {
+    margin: 0;
+    font-size: 24px;
+    color: aliceblue;
+}
+.pageContainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pageContainer h4 {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #f2e6e6;
+    cursor: pointer;
+}
+
+.pageContainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pageContainer a h4:hover,
+.pageContainer h4:hover {
+    color: #131414;
+    transition: color 0.3s;
+    font-weight: 400;
+}

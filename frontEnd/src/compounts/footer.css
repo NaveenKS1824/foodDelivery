@@ -1,0 +1,15 @@
+.footer{
+    position: relative;
+    height: 15vh;
+    background-color: var(--color6);
+    color: white;
+    margin-top: 20px;
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.context{
+    display: contents;
+}
