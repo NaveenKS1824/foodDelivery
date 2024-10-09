@@ -2,7 +2,7 @@
     margin-top: 81px;
 }
 .heroContent{
-    background-image: url("D:/Advance Mern/foodDeliveryApplication/frontEnd/src/assets/bgpizza3.jpg");
+    background-image: url("../assets/bgpizza3.jpg");
     background-position: center;
     background-size: cover;
     display: flex;

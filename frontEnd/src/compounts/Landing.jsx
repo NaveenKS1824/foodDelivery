@@ -6,6 +6,7 @@ import connect from '../assets/connect.png'
 import order from '../assets/order.png'
 import add from '../assets/add.png'
 import FoodItem from './FoodItem';
+import vid1  from '../assets/videoplayback.webm';
 import Footer from './Footer';
 
 function Landing(props) {
@@ -13,7 +14,7 @@ function Landing(props) {
         <div className="landingContainer">
             <div className="imgContainer1"> 
                 <video autoPlay loop muted className='backGroundVideo'>
-                    <source src = "\src\assets\videoplayback.webm"/>
+                    <source src = {vid1}/>
                 </video>
                 <div className="words">
                         <h1>Order Your Special Meals Tonight and Enjoy</h1>
