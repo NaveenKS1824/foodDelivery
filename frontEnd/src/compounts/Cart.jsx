@@ -7,6 +7,7 @@ function Cart(props) {
     console.log(cartItem);
     const [total,setTotal]= useState(0);
     const print = Math.ceil(total);
+    const [deliveryCharge,setDeliveryCharge] = useState(0); 
     useEffect(
         ()=>{
             let sum =0;
@@ -14,6 +15,11 @@ function Cart(props) {
                 sum+=(item.price*item.quantity);
             });
             setTotal(sum);
+            if(sum == 0){
+                setDeliveryCharge(0);
+            }
+            else{
+            setDeliveryCharge(50);}
         }
     ,[cartItem])
     return (
@@ -25,17 +31,33 @@ function Cart(props) {
                     })}
                 </div>
                 <div className="BillingContainer">
-                    <div className="billingDetails">
-                        BillingDetails:
+                    <div className="BillTitle">
+                        <div className="billingDetails">
+                            BillingDetails
+                        </div>
+                        <div className="">
+                            <div className="ItemTotal">
+                                ItemTotal
+                            </div>
+                            <div className="DeliveryCharge">
+                                DeliveryCharge
+                            </div>
+                            <div className="ToPay">
+                                To Pay
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div className="ItemTotal">
-                        ItemTotal: ${print}
-                    </div>
-                    <div className="DeliveryCharge">
-                        DeliveryCharge: $10
-                    </div>
-                    <div className="ToPay">
-                        To Pay: ${print+10}
+                    <div className="BillAmount">
+                        <div className="">
+                        :${print}
+                        </div>
+                        <div className="">
+                            :${deliveryCharge}
+                        </div>
+                        <div className="">
+                            :${print+deliveryCharge}
+                        </div>
                     </div>
                 </div>
             </div>

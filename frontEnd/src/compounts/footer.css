@@ -12,4 +12,12 @@
 }
 .context{
     display: contents;
+    color: white;
+}
+.context a{
+    text-decoration: none;
+    color: white;
+}
+.context a :hover{
+   color: black; 
 }
