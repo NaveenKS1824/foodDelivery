@@ -33,7 +33,10 @@ const Schema = new mongoose.Schema({
     id:{
         type:Number
     },
+    avail:{
+        type:String
+    }
 })
 
-const foodModel = new mongoose.model('FooodItems',Schema);
+const foodModel = new mongoose.model('FoodItems',Schema);
 module.exports = foodModel;

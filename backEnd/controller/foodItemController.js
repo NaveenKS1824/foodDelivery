@@ -2,7 +2,7 @@ const foodModel = require('../models/foodSchema');
 const userSchema = require('../models/userSchema');
 
 exports.createItems = async(req,res)=>{
-    const{title,description,price,category,image,rating,id}= req.body;
+    const{title,description,price,category,image,rating,id,avail}= req.body;
     try{
         const item = new foodModel({
             title:title,
@@ -12,6 +12,7 @@ exports.createItems = async(req,res)=>{
             image:image,
             rating:rating,
             id:id,  
+            avail:avail
         });
         await item.save();
         res.status(201).json({message:"Product is add to the Menu"});

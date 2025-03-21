@@ -8,6 +8,7 @@ import add from '../assets/add.png'
 import FoodItem from './FoodItem';
 import vid1  from '../assets/videoplayback.webm';
 import Footer from './Footer';
+import LiveTracking from './LiveTracking';
 
 function Landing(props) {
     return (
@@ -24,7 +25,7 @@ function Landing(props) {
                 {/* <div className=""></div>   */}
             </div>
             <div className="mainMenuButton">
-                <Link to={'/'}><button>Go to MainMenu</button></Link>
+                <Link to={'/landing'}><button>Go to MainMenu</button></Link>
             </div>
             <div className="someContent">
                 <h1>Food Ordering and Delivery Portal</h1>
@@ -54,6 +55,11 @@ function Landing(props) {
                     </div>
                 </div>
             </div>
+            {/* <div style={{width:"100%",display:"flex",justifyContent:"center"}}>
+            <div style={{width:"70%",height:"50%", overflow:"hidden",display:"flex",justifyContent:"center",alignSelf:"center"}}>
+                <LiveTracking orderId="67d91c67f86a7f5302802a45"/>
+            </div>
+            </div> */}
             <Footer/>
         </div>
     );

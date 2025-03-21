@@ -27,7 +27,7 @@ function Sucess(props) {
                 </div>
 
                 <div className="message-text-container">
-                    <p className="message-text">Successfully Added to Cart</p>
+                    <p className="message-text">Successfully {props.msg}</p>
                     <p className="sub-text">Everything seems great</p>
                 </div>
 

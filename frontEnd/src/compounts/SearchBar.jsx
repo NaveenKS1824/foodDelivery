@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './searchBar.css'
 import { IoIosSearch, IoMdClose } from 'react-icons/io';
 import briyani from '../assets/briyani.avif';
@@ -13,6 +13,7 @@ import SelectedItem from './SelectedItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchItem } from '../redux/productSlice';
 import NotFound from './NotFound';
+import { fetchFoodItem } from '../redux/foodItemsSlice';
 
 function SearchBar(props) {
   const dispatch = useDispatch();
@@ -35,28 +36,35 @@ function SearchBar(props) {
     setSearch('');
     dispatch(searchItem(search));
   }
-  
   const searchItems = useSelector((state)=>state.food.foodItem);
-
-
+  console.log(searchItems);
+  useEffect(()=>{
+    dispatch(fetchFoodItem())
+  },[dispatch]);
+  useEffect(() => {
+    dispatch(searchItem(search));
+  }, [search, dispatch]);
 
     return (
         <div className='mainSearch'>
           <div className="new">
-          <div className="searchContainer">
-            {(search=='')?<IoIosSearch className='searchIcon'/>:<IoMdClose className='searchIcon' onClick={handleClose}/>}
-            <input type="text" className='searchInput' placeholder='Search' value={search} onChange={(e)=>{setSearch(e.target.value);dispatch(searchItem(search))}} />
-          </div>
-          {(search=='')?(<div className="Cuisines">
-            <div className="PopularCusines">
-                <h2>Popular Cusines</h2>
-                <div className="imageContainer">
-                    {items.map((a)=>(
-                      <img src={a.src} alt={a.name} onClick={()=>handleImage(a.name)} />
-                    ))}
+              <div className="searchContainer">
+                {(search=='')?<IoIosSearch className='searchIcon'/>:<IoMdClose className='searchIcon' onClick={handleClose}/>}
+                <input type="text" className='searchInput' placeholder='Search' value={search} onChange={(e)=>{setSearch(e.target.value);dispatch(searchItem(search))}} />
+              </div>
+            </div>
+            <div>
+              <div className="Cuisines">
+                <div className="PopularCusines">
+                    <h2>Popular Cusines</h2>
+                    <div className="imageContainer">
+                        {items.map((a)=>(
+                          <img src={a.src} alt={a.name} onClick={()=>handleImage(a.name)} />
+                        ))}
+                    </div>
                 </div>
             </div>
-          </div>):((searchItems!='')?(searchItems.map((item)=><SelectedItem a={item}/>)):(<NotFound/>))}
+          {((searchItems!='')?(searchItems.map((item)=><SelectedItem a={item}/>)):(<NotFound/>))}
           </div>
         </div>
     );

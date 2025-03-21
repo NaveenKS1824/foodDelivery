@@ -1,6 +1,6 @@
 .mainHeader {
     width: 100vw;
-    height: 80px;
+    height:70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,23 +15,28 @@
 }
 
 .logoContainer {
-    flex: 1.5;
+    /* flex: 1; */
 }
-
-.logoContainer h4 {
+/* .logoContainer img{
+    height: 100px;
+} */
+/* .logoContainer h4 {
     margin: 0;
     font-size: 24px;
     color: aliceblue;
-}
+} */
 .pageContainer {
     display: flex;
-    flex: 1;
-    justify-content: space-around;
+    /* flex: 1; */
+    /* width: 20%; */
+    /* justify-content: space-around; */
     align-items: center;
+    gap: 20px;
 }
 
 .pageContainer h4 {
     margin: 0 10px;
+    
     font-size: 18px;
     color: #f2e6e6;
     cursor: pointer;
@@ -44,7 +49,75 @@
 
 .pageContainer a h4:hover,
 .pageContainer h4:hover {
-    color: #131414;
+    border-bottom: 2px solid #181717;
     transition: color 0.3s;
-    font-weight: 400;
+    color:black;
+}
+.active-link{
+    color:black;
+}
+.cart {
+    position: relative;
+  }
+  
+  .cart-icon {
+    font-size: 1.5rem;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #82d2ad;
+    color: #181717;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  .user-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--color3);
+    color: white;
+}
+
+.user-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: var(--color5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: rgb(221, 247, 235);
+}
+
+/* Login/Signup Link */
+.auth-link h4 {
+    background-color: var(--color6);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.auth-link h4:hover {
+    background-color: var(--color1);
 }

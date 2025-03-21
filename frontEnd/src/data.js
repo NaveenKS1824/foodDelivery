@@ -12,7 +12,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.5,
             "count": 150 
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 2,
@@ -27,7 +28,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 200
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 3,
@@ -39,7 +41,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 180
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 4,
@@ -51,7 +54,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.3,
             "count": 130
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 5,
@@ -63,7 +67,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.4,
             "count": 140
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 6,
@@ -75,7 +80,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 155
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 7,
@@ -87,7 +93,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.3,
             "count": 170
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 8,
@@ -99,7 +106,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.5,
             "count": 140
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 9,
@@ -111,7 +119,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.8,
             "count": 200
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 10,
@@ -123,7 +132,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 160
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 11,
@@ -135,7 +145,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.5,
             "count": 180
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 12,
@@ -147,7 +158,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.2,
             "count": 120
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 13,
@@ -159,7 +171,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.4,
             "count": 140
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 14,
@@ -171,7 +184,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.3,
             "count": 130
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 15,
@@ -183,7 +197,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.9,
             "count": 220
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 16,
@@ -195,7 +210,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.8,
             "count": 250
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 17,
@@ -207,7 +223,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 220
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 18,
@@ -219,7 +236,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 210
-        }
+        },
+        "avail":"no",
     },
     // Cakes
     {
@@ -232,7 +250,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.9,
             "count": 300
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 20,
@@ -244,7 +263,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.8,
             "count": 270
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 21,
@@ -256,7 +276,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 250
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 22,
@@ -268,7 +289,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 230
-        }
+        },
+        "avail":"yes",
     },
     // South Indian
     {
@@ -281,7 +303,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 180
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 24,
@@ -293,7 +316,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.5,
             "count": 190
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 25,
@@ -305,7 +329,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.4,
             "count": 170
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 26,
@@ -317,7 +342,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 210
-        }
+        },
+        "avail":"yes",
     },
     // Desserts
     {
@@ -330,7 +356,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 220
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 28,
@@ -342,7 +369,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 200
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 29,
@@ -354,7 +382,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.8,
             "count": 240
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 30,
@@ -366,7 +395,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 210
-        }
+        },
+        "avail":"yes",
     },
     // Chinese
     {
@@ -379,7 +409,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 230
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 32,
@@ -391,7 +422,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.5,
             "count": 200
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 33,
@@ -403,7 +435,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 220
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 34,
@@ -415,7 +448,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 210
-        }
+        },
+        "avail":"no",
     },
     // Rolls
     {
@@ -428,7 +462,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.7,
             "count": 220
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 36,
@@ -440,7 +475,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.6,
             "count": 200
-        }
+        },
+        "avail":"no",
     },
     {
         "id": 37,
@@ -452,7 +488,8 @@ export const foodItems = [
         "rating": {
             "rate": 4.5,
             "count": 190
-        }
+        },
+        "avail":"yes",
     },
     {
         "id": 38,
@@ -464,6 +501,7 @@ export const foodItems = [
         "rating": {
             "rate": 4.8,
             "count": 230
-        }
+        },
+        "avail":"no",
     }
 ]

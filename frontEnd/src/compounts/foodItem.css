@@ -1,10 +1,11 @@
 .Main{
-    margin-top: 81px;
+    margin-top: 70px;
 }
 .heroContent{
-    background-image: url("../assets/bgpizza3.jpg");
+    height:450px;
+    background-image: url("../assets/foodItem2.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     display: flex;
     justify-content: center;
 }
@@ -37,12 +38,15 @@
 }
 .sideContent{
     display: inline;
-    padding: 50px;
-    color:whitesmoke;
-    width: 40%;
-    font-weight: 500;
-    font-size: 16px;
+    padding: 90px;
+    color:rgb(226, 235, 230);
+    width: 45%;
+    font-weight: 700;
+    font-size: 17px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+};
+.sideContent .highlight{
+    color: rgb(244, 237, 233);
 }
 .mainContainer{
     width: 100%;
@@ -53,12 +57,15 @@
     margin-top: 80px;
 }
 .subContainer{
-    width:300px;
-    height: 450px;
+    width:330px;
+    height: 400px;
     padding: 15px;
-    border:2px solid var(--color2);
+    background-color: #fff;
+    border:1px solid rgb(134, 134, 134);
     border-radius: 10px;
     margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
 }
 .subContainer:hover{
     transition: 0.9s;
@@ -71,7 +78,7 @@
 .imgContainer{
     display: flex;
     justify-content: center;
-    height :200px;
+    height :180px;
     overflow: hidden;
 }
 .subContainer button{
@@ -81,3 +88,51 @@
 .descContainer{
     width: 290px;
 }
+.yes.textSucess{
+    color:green;
+    font-weight: 700;
+}
+.no.textDanger{
+    color: red;
+    font-weight: 700;
+}
+/* .error-card {
+    position: fixed;
+    top:20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .error-icon {
+    color: #f44336;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .error-message {
+    font-weight: bold;
+    color: #721c24;
+    font-size: 16px;
+  } */
+  
+  

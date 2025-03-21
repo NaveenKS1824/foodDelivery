@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+require("dotenv").config();
 
 const auth = async(req,res,next)=>{
     const token = req.header("Authorization").split(" ")[1];
@@ -6,7 +7,7 @@ const auth = async(req,res,next)=>{
         return res.status(401).send({message:"Access denied. No token provided."});
     }
     try{
-        const decoded = jwt.verify(token,"secret_token");
+        const decoded = jwt.verify(token,process.env.JWT_SECRET);
         req.user=decoded;
         next();
     }catch(err){
