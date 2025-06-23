@@ -8,6 +8,7 @@ function Checkout() {
   const [address, setAddress] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("creditCard");
   const [orderPlaced, setOrderPlaced] = useState(false);
+  const [paymentId, setPaymentId] = useState('');
   const navigate = useNavigate();
 
   const total = cartItem.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -18,6 +19,32 @@ function Checkout() {
     if (!address) {
       alert("Please enter your delivery address.");
       return;
+    }else{
+      var opt = {
+        key:"rzp_test_bbTA7ZrI0sGRDe",
+        key_secret:"PvR1XOuP5l8DG66AJdCaZta4",
+        amount:finalTotal*100,
+        currency:"USD",
+        name:"ToYourDoors",
+        describtion:"Payment",
+        handler: function(response){
+          alert(response.razorpay_payment_id);
+          setPaymentId(response.razorpay_payment_id);
+        },
+        prefill:{
+          name:"AmanJunaith",
+          email:"srdvsekar21@gmail.com",
+          contact:"9361673921",
+        },
+        notes:{
+          address:"RazorPay Corporate Office",
+        },
+        theme:{
+          color:"#56ab91"
+        },
+      }
+      var pay = new window.Razorpay(opt);
+      pay.open();
     }
     setOrderPlaced(true);
   };
@@ -55,7 +82,7 @@ function Checkout() {
             </div>
 
             <div className="payment-method">
-              <h3>Payment Method</h3>
+              {/* <h3>Payment Method</h3>
               <label>
                 <input
                   type="radio"
@@ -82,7 +109,8 @@ function Checkout() {
                   onChange={(e) => setPaymentMethod(e.target.value)}
                 />
                 Cash on Delivery
-              </label>
+              </label> */}
+
             </div>
 
             <button className="confirm-order-btn" onClick={handleOrder}>
